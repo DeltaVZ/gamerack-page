@@ -3,23 +3,181 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GameRack - Track Your Collection</title>
-  <meta
-    name="description"
-    content="GameRack helps you track your videogame collection and merch, from standard editions to steelbooks, press kits, and more."
-  >
+  <title>GameRack – Track Your Game Collection</title>
+  <meta name="description" content="GameRack is the mobile app for tracking your video game collection, physical and digital copies, and every playthrough. Free on iOS and Android.">
+  <link rel="icon" href="media/logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
-    <p class="eyebrow">GameRack</p>
-    <h1>Track your videogame collection in one place.</h1>
-    <p class="lead">
-      GameRack is software to catalog your games and related merch, including
-      standard editions, steelbooks, press kits, deluxe editions, limited runs,
-      collector sets, and more.
-    </p>
-    <p class="coming-soon">Coming soon.</p>
-  </main>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="media/logo.png" alt="GameRack icon" width="34" height="34">
+        <span>GameRack</span>
+      </a>
+      <a href="#download" class="nav-cta">Get the app</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Introducing GameRack</p>
+        <h1>Your games.<br><span class="accent">Perfectly catalogued.</span></h1>
+        <p class="lead">
+          Track every title you own — physical discs, digital licenses,
+          steelbooks, collector editions — and log every playthrough.
+          GameRack keeps your entire gaming life in one place.
+        </p>
+        <div class="badges">
+          <a href="#" class="store-badge" aria-label="Download on the App Store" title="Coming soon">
+            <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.94 5.19A4.38 4.38 0 0 0 16 2a4.44 4.44 0 0 0-3 1.52 4.07 4.07 0 0 0-1 3.09 3.69 3.69 0 0 0 2.94-1.42zm2.52 7.44a4.51 4.51 0 0 1 2.16-3.81 4.66 4.66 0 0 0-3.66-2c-1.56-.16-3 .91-3.83.91s-2-.89-3.3-.87a4.92 4.92 0 0 0-4.14 2.53C2.85 12.12 4.2 17.22 6 19.68c.92 1.32 2 2.8 3.38 2.75s1.89-.88 3.56-.88 2.13.88 3.58.85 2.39-1.33 3.28-2.67a11 11 0 0 0 1.43-3.08 4.39 4.39 0 0 1-2.77-4.02z"/>
+            </svg>
+            <span class="store-text">
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+          <a href="#" class="store-badge" aria-label="Get it on Google Play" title="Coming soon">
+            <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3.18 23.76c.39.21.9.27 1.47.06L16.8 16.2l-3.39-3.39L3.18 23.76zM1.5 1.56C1.08 1.89.75 2.46.75 3.18v17.64c0 .72.33 1.29.75 1.62L13.17 12 1.5 1.56zm20.52 8.88L18.3 8.22l-3.51 3.51 3.51 3.51 3.75-2.1c1.05-.6 1.05-1.59-.03-2.7zm-17.7-8.1 11.7 11.7-3.39-3.39L4.65 2.22c-.6-.33-1.14-.27-1.47.06l-.96-.93z"/>
+            </svg>
+            <span class="store-text">
+              <small>Get it on</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-screen">
+        <img
+          src="media/Library%20View.png"
+          alt="GameRack showing a game library grid with Blue Prince, GTA VI, and Elden Ring Nightreign"
+          class="screen"
+        >
+      </div>
+    </div>
+  </header>
+
+  <!-- ── FEATURES ── -->
+  <section class="features" id="features">
+
+    <div class="feature">
+      <div class="feature-copy">
+        <span class="label">Your Library</span>
+        <h2>Every game you own, at a glance.</h2>
+        <p>Browse your collection as a cover grid or a list. Filter by play
+        status — Playing, Finished, Skipped, or To Play — and sort however
+        suits you. A live completion bar lets you keep an eye on your backlog.</p>
+        <ul class="checklist">
+          <li>Grid and list views</li>
+          <li>Play status badges</li>
+          <li>Backlog completion tracker</li>
+          <li>Works offline</li>
+        </ul>
+      </div>
+      <div class="feature-screen">
+        <img src="media/Library%20View.png" alt="Library grid view" class="screen" loading="lazy">
+      </div>
+    </div>
+
+    <div class="feature feature-alt">
+      <div class="feature-copy">
+        <span class="label">The Rack</span>
+        <h2>Track every copy you own.</h2>
+        <p>Log physical discs and digital purchases separately — including
+        steelbooks, press kits, limited runs, and collector sets. Record the
+        store, platform, edition type, and quantity for each copy.</p>
+        <ul class="checklist">
+          <li>Physical and digital copies</li>
+          <li>Standard, Deluxe, and Collector's editions</li>
+          <li>Store tracking (Steam, PSN, GOG&hellip;)</li>
+          <li>Multiple quantities per copy</li>
+        </ul>
+      </div>
+      <div class="feature-screen">
+        <img src="media/Copies.png" alt="The Rack showing owned copies per platform" class="screen" loading="lazy">
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-copy">
+        <span class="label">Playthroughs</span>
+        <h2>Log how — and how long — you played.</h2>
+        <p>Record individual playthroughs per game and platform. Set start and
+        finish dates, hours played, and achievement status. Track DLC and mod
+        runs separately, then filter your entire history any way you like.</p>
+        <ul class="checklist">
+          <li>Per-platform playthrough logs</li>
+          <li>Start date, finish date, hours played</li>
+          <li>Achievement completion status</li>
+          <li>DLC and mod run support</li>
+        </ul>
+      </div>
+      <div class="feature-screen">
+        <img src="media/Playthroughs.png" alt="Playthroughs list showing Saros, Returnal, and Hotline Miami" class="screen" loading="lazy">
+      </div>
+    </div>
+
+    <div class="feature feature-alt">
+      <div class="feature-copy">
+        <span class="label">Game Catalog</span>
+        <h2>Search thousands of games and add them in one tap.</h2>
+        <p>Powered by IGDB, GameRack gives you access to a huge game database.
+        Tap any result to see its full profile — release date, platforms,
+        genres, summary, screenshots, trailers — then add it to your library
+        without typing a single thing.</p>
+        <ul class="checklist">
+          <li>Powered by IGDB</li>
+          <li>Cover art and metadata filled automatically</li>
+          <li>Platforms, genres, developers, publishers</li>
+          <li>Screenshots and trailers</li>
+        </ul>
+      </div>
+      <div class="feature-screen">
+        <img src="media/CatalogGameInfo.png" alt="Catalog detail page for Dark Souls" class="screen" loading="lazy">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── DOWNLOAD CTA ── -->
+  <section class="cta" id="download">
+    <div class="cta-inner">
+      <img src="media/logo.png" alt="" width="80" height="80" class="cta-icon">
+      <h2>Ready to organise your collection?</h2>
+      <p>GameRack is free to download. Available on iOS and Android.</p>
+      <div class="badges">
+        <a href="#" class="store-badge" aria-label="Download on the App Store" title="Coming soon">
+          <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.94 5.19A4.38 4.38 0 0 0 16 2a4.44 4.44 0 0 0-3 1.52 4.07 4.07 0 0 0-1 3.09 3.69 3.69 0 0 0 2.94-1.42zm2.52 7.44a4.51 4.51 0 0 1 2.16-3.81 4.66 4.66 0 0 0-3.66-2c-1.56-.16-3 .91-3.83.91s-2-.89-3.3-.87a4.92 4.92 0 0 0-4.14 2.53C2.85 12.12 4.2 17.22 6 19.68c.92 1.32 2 2.8 3.38 2.75s1.89-.88 3.56-.88 2.13.88 3.58.85 2.39-1.33 3.28-2.67a11 11 0 0 0 1.43-3.08 4.39 4.39 0 0 1-2.77-4.02z"/>
+          </svg>
+          <span class="store-text">
+            <small>Download on the</small>
+            <strong>App Store</strong>
+          </span>
+        </a>
+        <a href="#" class="store-badge" aria-label="Get it on Google Play" title="Coming soon">
+          <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.18 23.76c.39.21.9.27 1.47.06L16.8 16.2l-3.39-3.39L3.18 23.76zM1.5 1.56C1.08 1.89.75 2.46.75 3.18v17.64c0 .72.33 1.29.75 1.62L13.17 12 1.5 1.56zm20.52 8.88L18.3 8.22l-3.51 3.51 3.51 3.51 3.75-2.1c1.05-.6 1.05-1.59-.03-2.7zm-17.7-8.1 11.7 11.7-3.39-3.39L4.65 2.22c-.6-.33-1.14-.27-1.47.06l-.96-.93z"/>
+          </svg>
+          <span class="store-text">
+            <small>Get it on</small>
+            <strong>Google Play</strong>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>&copy; 2026 GameRack &middot; All rights reserved</p>
+  </footer>
+
 </body>
 </html>
